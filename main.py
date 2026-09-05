@@ -1,22 +1,23 @@
 from PyQt6.QtWidgets import QApplication, QMainWindow, QStackedWidget
 from PyQt6.uic import loadUi
 import sys
+
 class NoctuaLauncher(QMainWindow):
     def __init__(self):
         super().__init__()
         self.setWindowTitle("Noctua Launcher")
         self.resize(1024, 768)
-
-        #Creo los contenedores de las paginas
-        self.stacked_widget = QStackedWidget()
+        
+        # Contenedor de páginas
+        self.stack = QStackedWidget(self)
         self.setCentralWidget(self.stack)
-
-        #Cargo las paginas hechas en Qt Designer
+        
+        # Cargar las vistas hechas en Qt Designer
         self.login_view = loadUi("login_window.ui")
         self.main_view = loadUi("main_dashboard.ui")
-
+        
         # Añadir al Stack
-        self.stack.addWidget(self.login_view)   Índice 0
+        self.stack.addWidget(self.login_view)   #Índice 0
         self.stack.addWidget(self.main_view)   # Índice 1
         
         # Conectar señal de login para cambiar de vista
@@ -37,4 +38,3 @@ if __name__ == "__main__":
     window = NoctuaLauncher()
     window.show()
     sys.exit(app.exec())
-Consejos de QSS para un Launcher Oscuro
