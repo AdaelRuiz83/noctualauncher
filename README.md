@@ -7,10 +7,13 @@
 </div>
 
 ---
-<p>Lanzador y organizador de videojuegos, estoy retomando el proyecto, con nuevas caracteristicas, lo estoy diseñando en QtDesigner y PyQt6.
+## ✨ Características Principales
 
-La idea de este launcher es crear una biblioteca sobre videojuegos, donde podamos ver información de los juegos que ya hemos jugado o simplemente juegos que vallamos a jugar, quiero agregar una sección sobre información de los videojuegos para ver sus reseñas, imagenes,etc.</p>
-
+* 📚 **Biblioteca Multiplataforma:** Organiza y gestiona ROMs de diversas consolas en una interfaz fluida impulsada por PyQt6.
+* 🖼️ **Fichas de Videojuegos:** Visualiza carátulas, sinopsis, metadatos y estadísticas de tiempo de juego.
+* ⚡ **Lanzador de Emuladores:** Integración directa con tus emuladores favoritos mediante perfiles optimizados.
+* 💬 **Sala de Chat y Matchmaking (LFG):** Espacio en tiempo real para convivir con la comunidad y encontrar compañeros para partidas multijugador y netplay.
+* 🎨 **Personalización Total:** Interfaz moderna estilizada mediante hojas de estilo QSS.
 
 <div align="center">
   <p>✨ "El código es mi lienzo, y cada commit es un pincelazo." ✨</p>
