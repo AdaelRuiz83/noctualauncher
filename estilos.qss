@@ -1,0 +1,112 @@
+/* ==========================================
+   Noctua Launcher - QSS Global Stylesheet
+   ========================================== */
+
+/* Ventana Principal y Widgets Base */
+QWidget {
+    background-color: #12141c;
+    color: #e2e8f0;
+    font-family: "Segoe UI", -apple-system, sans-serif;
+    font-size: 13px;
+}
+
+QMainWindow {
+    background-color: #12141c;
+}
+
+/* Campos de Texto (Login, Buscador, Chat) */
+QLineEdit, QTextEdit, QPlainTextEdit {
+    background-color: #1a1d26;
+    border: 1px solid #2a2e3d;
+    border-radius: 6px;
+    padding: 8px 12px;
+    color: #ffffff;
+    selection-background-color: #d97706;
+}
+
+QLineEdit:focus, QTextEdit:focus {
+    border: 1px solid #d97706;
+}
+
+/* Botones Generales */
+QPushButton {
+    background-color: #1f2430;
+    border: 1px solid #2f354a;
+    border-radius: 6px;
+    padding: 8px 16px;
+    color: #e2e8f0;
+    font-weight: 600;
+}
+
+QPushButton:hover {
+    background-color: #2a3142;
+    border: 1px solid #d97706;
+    color: #ffffff;
+}
+
+QPushButton:pressed {
+    background-color: #171b24;
+}
+
+/* Botón de Acción Principal (Ej. Iniciar Sesión / Jugar) */
+QPushButton#btn_login, QPushButton#btn_primary {
+    background-color: #d97706;
+    border: none;
+    color: #ffffff;
+}
+
+QPushButton#btn_login:hover, QPushButton#btn_primary:hover {
+    background-color: #f59e0b;
+}
+
+/* Listas (Biblioteca de ROMs, Canales de Chat) */
+QListWidget, QListView {
+    background-color: #161922;
+    border: 1px solid #222634;
+    border-radius: 6px;
+    padding: 4px;
+    outline: none;
+}
+
+QListWidget::item {
+    background-color: transparent;
+    border-radius: 4px;
+    padding: 8px;
+    margin-bottom: 2px;
+}
+
+QListWidget::item:hover {
+    background-color: #1f2430;
+}
+
+QListWidget::item:selected {
+    background-color: #2a3142;
+    color: #f59e0b;
+    border-left: 3px solid #f59e0b;
+}
+
+/* Barras de Desplazamiento Personalizadas */
+QScrollBar:vertical {
+    background-color: #12141c;
+    width: 8px;
+    margin: 0px;
+    border-radius: 4px;
+}
+
+QScrollBar::handle:vertical {
+    background-color: #2a3142;
+    min-height: 20px;
+    border-radius: 4px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background-color: #d97706;
+}
+
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
+    height: 0px;
+}
+
+QScrollBar:horizontal {
+    height: 0px;
+}
